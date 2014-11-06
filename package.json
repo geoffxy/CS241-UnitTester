@@ -1,0 +1,27 @@
+{
+  "name": "cs241tester",
+  "version": "0.0.0",
+  "description": "A unit tester for CS241 assignments.",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geoffxy/CS241-UnitTester.git"
+  },
+  "keywords": [
+    "cs241",
+    "unit",
+    "tester"
+  ],
+  "author": "Geoffrey Yu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geoffxy/CS241-UnitTester/issues"
+  },
+  "homepage": "https://github.com/geoffxy/CS241-UnitTester",
+  "dependencies": {
+    "colors": "^1.0.3"
+  }
+}
