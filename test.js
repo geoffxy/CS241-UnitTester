@@ -37,6 +37,7 @@ if (!noCompile) {
     if (err || errorMsg) {
       console.log('Compilation error.'.red);
       console.log(errorMsg);
+      console.log();
     } else {
       console.log('Compilation succeeded.'.green);
       outputBreak();
@@ -104,7 +105,8 @@ function runTests() {
             resolveTestCase(output === expected.result, testCase);
           } else {
             // Non-strict Error - Error message only has to contain the result at some point
-            resolveTestCase(output.indexOf(expected.result) !== -1, testCase);
+            var expectedError = expected.result || 'ERROR';
+            resolveTestCase(output.indexOf(expectedError) !== -1, testCase);
           }
         }
 
